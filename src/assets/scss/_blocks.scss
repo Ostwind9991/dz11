@@ -4,7 +4,7 @@
   padding: 0 16px;
 
   &__first {
-    background-color: $Accent;
+    background-color:map-get($color, "Accent");
     @extend %blocks;
     margin: auto;
     &__wrapper {
@@ -26,13 +26,14 @@
     max-width: 375px;
     justify-content: space-between;
     padding-top: 16px;
+    position: relative;
     &__column {
       display: flex;
       flex: 1 1 163px;
       align-items: flex-start;
       flex-direction: column;
       &__block1 {
-        background-color: $Blue;
+        background-color: map-get($color, "Blue");
         @extend %blocks;
         margin-bottom: 16px;
         h2 {
@@ -52,7 +53,7 @@
         }
       }
       &__block2 {
-        background-color: $Pink;
+        background-color: map-get($color, "Pink");
         @extend %blocks;
         margin-bottom: 16px;
         h2 {
@@ -72,7 +73,7 @@
         }
       }
       &__block3 {
-        background-color: $Yellow;
+        background-color: map-get($color, "Yellow");
         @extend %blocks;
         padding-bottom: 0;
         h2 {
@@ -89,7 +90,7 @@
         }
       }
       &__block4 {
-        background-color: $Purple;
+        background-color:map-get($color, "Purple");
         padding-bottom: 0;
         @extend %blocks;
         h2 {
@@ -109,6 +110,18 @@
     &__column:first-child {
       margin-right: 16px;
     }
+  }
+  &__wrapper::after {
+    content: "";
+    display: block;
+    width: 134px;
+    height: 5px;
+    position: absolute;
+    bottom: 8px;
+    left: 120px;
+    background: #ACB8C2;
+    opacity: 0.4;
+    border-radius: 100px;
   }
 }
 

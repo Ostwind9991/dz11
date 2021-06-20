@@ -1,14 +1,24 @@
-$Orange: rgba(255, 227, 211, 1);
-$bleak: #191D21;
-$bleak2: #10182B;
-$DarkBackground: #393939;
-$Accent: #FFE3D3;
-$Blue:#E7F6FF;
-$Pink:#FFE8EC;
-$Yellow:#FFFACA;
-$Purple:#EEE5FF;
+//$Orange: rgba(255, 227, 211, 1);
+//$bleak: #191D21;
+//$bleak2: #10182B;
+//$DarkBackground: #393939;
+//$Accent: #FFE3D3;
+//$Blue:#E7F6FF;
+//$Pink:#FFE8EC;
+//$Yellow:#FFFACA;
+//$Purple:#EEE5FF;
 
-
+$color: (
+"Orange":rgba(255,227,211,1),
+"bleak": #191D21,
+"bleak2": #10182B,
+"DarkBackground": #393939,
+"Accent": #FFE3D3,
+"Blue":#E7F6FF,
+"Pink":#FFE8EC,
+"Yellow":#FFFACA,
+"Purple":#EEE5FF,
+);
 
 %heading1 {
   font-weight: 700;
@@ -22,14 +32,14 @@ $Purple:#EEE5FF;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: -0.5px;
-  color: $bleak;
+  color:map-get($color, "bleak");
 }
 
 %ParagraphSmallBold {
   font-weight: 800;
   font-size: 12px;
   line-height: 16px;
-  color: $DarkBackground;
+  color: map-get($color, "DarkBackground");
   padding: 4px 8px;
   background: #FFFFFF;
   border-radius: 16px;
@@ -41,7 +51,7 @@ $Purple:#EEE5FF;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.5px;
-  color: $bleak2;
+  color: map-get($color, "bleak2");
 }
 %ParagraphLargeBold {
   font-weight: 700;
@@ -50,6 +60,10 @@ $Purple:#EEE5FF;
   letter-spacing: -0.5px;
   color: #fff;
   display: inline-block;
+}
+
+%ParagraphLargeBold:hover {
+  font-weight: 800;
 }
 
 %blocks {

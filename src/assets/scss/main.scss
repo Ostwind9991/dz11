@@ -1,17 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&display=swap');
 @import "reset";
 @import "header";
 @import "menu";
 @import "blocks";
 
+body {
+  font-family: Nunito Sans, sans-serif;
+  font-style: normal;
+}
+
 @include breakpoint(desktop) {
-  body {max-width: 375px;}
-  body {margin: auto;}
+  body {
+    max-width: 375px;
+    margin: auto;
+  }
+
 }
 @include breakpoint(iPad) {
-  body {max-width: 375px;}
-  body {margin: auto;}
+  body {
+    max-width: 375px;
+    margin: auto;
+  }
 }
 @include breakpoint(mobil) {
-  body {max-width: 767px;}
+  body {
+    max-width: 767px;
+  }
 }
 

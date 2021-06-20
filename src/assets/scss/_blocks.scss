@@ -1,0 +1,115 @@
+@import "assets";
+
+.blocks {
+  padding: 0 16px;
+
+  &__first {
+    background-color: $Accent;
+    @extend %blocks;
+    margin: auto;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+          &__title {
+            @extend %heading5;
+          }
+          &__tame {
+            @extend %ParagraphSmallBold;
+          }
+      }
+  }
+  &__wrapper {
+    display: flex;
+    margin: auto;
+    max-width: 375px;
+    justify-content: space-between;
+    padding-top: 16px;
+    &__column {
+      display: flex;
+      flex: 1 1 163px;
+      align-items: flex-start;
+      flex-direction: column;
+      &__block1 {
+        background-color: $Blue;
+        @extend %blocks;
+        margin-bottom: 16px;
+        h2 {
+          @extend %heading5;
+          margin-bottom: 8px;
+          text-align: start;
+        }
+        div {
+          text-align: start;
+        }
+        span {
+          @extend %ParagraphSmallBold;
+          margin-bottom: 14px;
+        }
+        img {
+          margin-bottom: 6px;
+        }
+      }
+      &__block2 {
+        background-color: $Pink;
+        @extend %blocks;
+        margin-bottom: 16px;
+        h2 {
+          @extend %heading5;
+          margin-bottom: 8px;
+          text-align: start;
+        }
+        div {
+          text-align: start;
+        }
+        span {
+          @extend %ParagraphSmallBold;
+          margin-bottom: 24px;
+        }
+        img {
+          margin-bottom: 6px;
+        }
+      }
+      &__block3 {
+        background-color: $Yellow;
+        @extend %blocks;
+        padding-bottom: 0;
+        h2 {
+          @extend %heading5;
+          margin-bottom: 8px;
+          text-align: start;
+        }
+        div {
+          text-align: start;
+        }
+        span {
+          @extend %ParagraphSmallBold;
+          margin-bottom: 24px;
+        }
+      }
+      &__block4 {
+        background-color: $Purple;
+        padding-bottom: 0;
+        @extend %blocks;
+        h2 {
+          @extend %heading5;
+          margin-bottom: 10px;
+          text-align: start;
+        }
+        div {
+          text-align: start;
+        }
+        span {
+          @extend %ParagraphSmallBold;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &__column:first-child {
+      margin-right: 16px;
+    }
+  }
+}
+
+

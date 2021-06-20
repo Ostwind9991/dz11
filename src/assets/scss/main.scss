@@ -1,1 +1,17 @@
+@import "reset";
 @import "header";
+@import "menu";
+@import "blocks";
+
+@include breakpoint(desktop) {
+  body {max-width: 375px;}
+  body {margin: auto;}
+}
+@include breakpoint(iPad) {
+  body {max-width: 375px;}
+  body {margin: auto;}
+}
+@include breakpoint(mobil) {
+  body {max-width: 767px;}
+}
+

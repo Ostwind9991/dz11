@@ -1,0 +1,74 @@
+$Orange: rgba(255, 227, 211, 1);
+$bleak: #191D21;
+$bleak2: #10182B;
+$DarkBackground: #393939;
+$Accent: #FFE3D3;
+$Blue:#E7F6FF;
+$Pink:#FFE8EC;
+$Yellow:#FFFACA;
+$Purple:#EEE5FF;
+
+
+
+%heading1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 128%;
+  letter-spacing: -0.5px;
+}
+
+%heading5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  color: $bleak;
+}
+
+%ParagraphSmallBold {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  color: $DarkBackground;
+  padding: 4px 8px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  display: inline-block;
+}
+
+%ParagraphLarge {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  color: $bleak2;
+}
+%ParagraphLargeBold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  display: inline-block;
+}
+
+%blocks {
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 375px;
+  text-align: center;
+  flex: 1 1 163px;
+  min-width: 163px;
+}
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 1025px) { @content; }
+  }
+  @else if $point == iPad {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == mobil {
+    @media (max-width: 767px)  { @content; }
+  }
+}

@@ -1,9 +1,21 @@
+@import "assets";
+
 .header {
   &__wrapper {
     padding: 90px 16px 16px 16px;
     display: flex;
+    justify-content: space-between;
+
   }
+
+  &__wrapper img {
+    margin-right: 16px;
+  }
+
   &__title {
+    flex-grow: 1;
+    @extend %heading1;
+
 
   }
 }

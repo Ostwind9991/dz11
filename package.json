@@ -1,12 +1,4 @@
 {
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0",
-    "gulp-sass": "^4.1.0"
-  },
-  "dependencies": {
-    "browser-sync": "^2.26.14"
-  },
   "name": "dz11",
   "version": "1.0.0",
   "main": "gulpfile.js",
@@ -23,5 +15,12 @@
     "url": "https://github.com/Ostwind9991/dz11/issues"
   },
   "homepage": "https://github.com/Ostwind9991/dz11#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "browser-sync": "^2.26.14"
+  }
 }
+

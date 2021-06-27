@@ -1,10 +1,26 @@
 {
-  "devDependencies": {
+  "name": "dz11",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ostwind9991/dz11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ostwind9991/dz11/issues"
+  },
+  "homepage": "https://github.com/Ostwind9991/dz11#readme",
+  "description": "",
+  "dependencies": {
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
-    "gulp-sass": "^4.1.0"
-  },
-  "dependencies": {
+    "gulp-sass": "^4.1.0",
     "browser-sync": "^2.26.14"
   }
 }
+
